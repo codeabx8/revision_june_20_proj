@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Context</title>
+</head>
+<body>
+Name:{{ student.name }}<br>
+age:{{ student.age }}<br>
+email:{{ student.email }}<br>
+address:{{ student.address }}
+<br><br><br>
+{% for s in students %}
+    Name:{{ s.name }}<br>
+    age:{{ s.age }}<br>
+    email:{{ s.email }}<br>
+    address:{{ s.address }}<br><br>
+{% endfor %}
+</body>
+</html>
