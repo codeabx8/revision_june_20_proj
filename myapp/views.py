@@ -24,3 +24,12 @@ def learning_context(request):
         {"name": "Sagar", "age": 19, "address": "ktm", "email": "sagar@gmail.com"},
     ]
     return render(request, template_name="myapp/learning_context.html",context={"students":students,"student":student})
+
+def using_bootstrap(request):
+    students =[
+        {"name": "Arun", "age": 20, "address": "ktm", "email": "arun@gmail.com"},
+        {"name": "Barun", "age": 22, "address": "ktm", "email": "run@gmail.com"},
+        {"name": "Tarun", "age": 30, "address": "ktm", "email": "un@gmail.com"},
+        {"name": "Sagar", "age": 19, "address": "ktm", "email": "sagar@gmail.com"},
+    ]
+    return render(request, template_name="myapp/using_bootstrap.html", context={"students":students})

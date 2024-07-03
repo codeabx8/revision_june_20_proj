@@ -11,10 +11,13 @@ email:{{ student.email }}<br>
 address:{{ student.address }}
 <br><br><br>
 {% for s in students %}
-    Name:{{ s.name }}<br>
-    age:{{ s.age }}<br>
-    email:{{ s.email }}<br>
-    address:{{ s.address }}<br><br>
+    {% if s.age > 25 %}
+        Name:{{ s.name }}<br>
+        age:{{ s.age }}<br>
+        email:{{ s.email }}<br>
+        address:{{ s.address }}<br><br>
+    {% endif %}
+
 {% endfor %}
 </body>
 </html>
