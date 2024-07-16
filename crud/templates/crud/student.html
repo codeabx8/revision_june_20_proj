@@ -1,18 +1,13 @@
 {% extends 'commons/layouts/base.html' %}
-
-{% block title %}
-    Student
-{% endblock %}
-
+{% block title %} Student {% endblock %}
 {% block content %}
-    {% include 'commons/includes/nav.html' %}
-    <br>
+    {% include 'includes/nav.html' %}
     <div class="container">
         <h1>Student</h1><br>
         <table class="table table-striped">
         <thead>
         <tr>
-            <th scope="col">#</th>
+            <th scope="col">S.N</th>
             <th scope="col">Name</th>
             <th scope="col">Age</th>
             <th scope="col">Email</th>
@@ -32,4 +27,4 @@
         </tbody>
     </table>
     </div>
-{% endblock %}
+{% endblock%}
